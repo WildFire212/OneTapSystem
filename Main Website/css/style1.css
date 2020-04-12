@@ -268,7 +268,8 @@ ol {
 
 .site-logo {
 	display: inline-block;
-	transform : scale(200%);
+	height : 350px ; 
+	width:   300px;
 }
 
 .main-menu ul {

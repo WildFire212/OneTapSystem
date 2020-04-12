@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>WebUni - Education Template</title>
+	<title>One Tap System</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="WebUni Education Template">
 	<meta name="keywords" content="webuni, education, creative, html">
@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="css/owl.carousel.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/style1.css"/>
 
 
 	<!--[if lt IE 9]>
@@ -37,7 +37,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="site-logo">
-						<img src="img/logo.png" alt="">
+						<img src="img/cologo1.png" alt="">
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>
@@ -93,7 +93,7 @@
 				<div class="mix col-lg-3 col-md-4 col-sm-6 finance">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/1.jpg">
-							<div class="price">Price: $15</div>
+							
 						</div>
 						<div class="course-info">
 							<div class="course-text">
@@ -116,7 +116,7 @@
 								
 								//echo "Connected successfully";  //if no error 
 								$sql ="use studentattendancesystem;";
-								$sql2 ="select fact_name from faculty where fact_id = " . $_POST["name"];
+								$sql2 ="select fact_name from faculty where fact_name like '%". $_POST["name"] . "%'";
 								
 								$result1  = $conn->query($sql);
 								$result2  = $conn->query($sql2);
@@ -144,7 +144,7 @@
 				<div class="mix col-lg-3 col-md-4 col-sm-6 design">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/2.jpg">
-							<div class="price">Price: $15</div>
+							
 						</div>
 						<div class="course-info">
 							<div class="course-text">
@@ -163,7 +163,7 @@
 				<div class="mix col-lg-3 col-md-4 col-sm-6 web">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/3.jpg">
-							<div class="price">Price: $15</div>
+							
 						</div>
 						<div class="course-info">
 							<div class="course-text">
@@ -182,7 +182,7 @@
 				<div class="mix col-lg-3 col-md-4 col-sm-6 photo">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/4.jpg">
-							<div class="price">Price: $15</div>
+							
 						</div>
 						<div class="course-info">
 							<div class="course-text">
@@ -201,7 +201,7 @@
 				<div class="mix col-lg-3 col-md-4 col-sm-6 finance">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/5.jpg">
-							<div class="price">Price: $15</div>
+							
 						</div>
 						<div class="course-info">
 							<div class="course-text">
@@ -220,7 +220,7 @@
 				<div class="mix col-lg-3 col-md-4 col-sm-6 design">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/6.jpg">
-							<div class="price">Price: $15</div>
+						
 						</div>
 						<div class="course-info">
 							<div class="course-text">
@@ -239,7 +239,7 @@
 				<div class="mix col-lg-3 col-md-4 col-sm-6 web">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/7.jpg">
-							<div class="price">Price: $15</div>
+							
 						</div>
 						<div class="course-info">
 							<div class="course-text">
@@ -258,7 +258,7 @@
 				<div class="mix col-lg-3 col-md-4 col-sm-6 photo">
 					<div class="course-item">
 						<div class="course-thumb set-bg" data-setbg="img/courses/8.jpg">
-							<div class="price">Price: $15</div>
+							
 						</div>
 						<div class="course-info">
 							<div class="course-text">
@@ -277,7 +277,7 @@
 			<div class="featured-courses">
 				<div class="featured-course course-item">
 					<div class="course-thumb set-bg" data-setbg="img/courses/f-1.jpg">
-						<div class="price">Price: $15</div>
+						
 					</div>
 					<div class="row">
 						<div class="col-lg-6 offset-lg-6 pl-0">
@@ -298,7 +298,7 @@
 				</div>
 				<div class="featured-course course-item">
 					<div class="course-thumb set-bg" data-setbg="img/courses/f-2.jpg">
-						<div class="price">Price: $15</div>
+						
 					</div>
 					<div class="row">
 						<div class="col-lg-6 pr-0">
