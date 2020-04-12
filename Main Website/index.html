@@ -37,15 +37,14 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="site-logo">
-						<img src="img/cologo1.png" alt="">
+						<img src="img/cologo1.png" height="150" width="400" alt="">
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-9">
-					
-					<nav class="main-menu">
+					<nav class="main-menu" style=" padding-left : 490px">
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<!-- <li><a href="#">About us</a></li> -->
@@ -59,37 +58,43 @@
 		</div>
 	</header>
 	<!-- Header section end -->
-
-
 	<!-- Hero section -->
 	<section class="page-info-section set-bg" data-setbg="img/bg.jpg">
+
+		<div class="hero-text text-white">
+		</div>
+	</section>
+
+
+
+
+
+	<section class="search-section ss-other-page">
 		<div class="container">
-			<div class="hero-text text-white">
+
+			<div class="search-warp">
+				<div class="section-title text-white">
+					<h2><span>One Tap System Search</span></h2>
+				</div>
 				<div class="row">
 					<div class="col-lg-10 offset-lg-1">
-						<form class="intro-newslatter" action = "courses.php" method = "post">
-							
-							<input type="text" name = "name" placeholder="Search here....">
-							
+						<!-- search form -->
+						<form class="course-search-form" action= "courses.php" method="post">
+							<input type="text" name="name" placeholder="Search for a Faculty name">
+
+							<button class="site-btn btn-dark">Search</button>
 						</form>
 					</div>
-					
-					<div class="col-lg-10 offset-lg-1">
-						<br><button class="site-btn home_sign_up">Search</button>
-					</div>	
 				</div>
 			</div>
-			
 		</div>
 	</section>
 	<!-- Hero section end -->
-
-
 	<!-- categories section -->
 	<section class="categories-section spad">
 		<div class="container">
 			<div class="section-title">
-				<h2>Departments</h2>
+				<h2>Our College Departments</h2>
 				<p>Click on the department name to get the information</p>
 			</div>
 			<div class="row">
@@ -108,7 +113,7 @@
 						<div class="ci-thumb set-bg" data-setbg="img/itlogo.png"></div>
 						<div class="ci-text">
 							<h5>Information Technology</h5>
-							
+
 						</div>
 					</div>
 				</div>
@@ -152,8 +157,6 @@
 		</div>
 	</section>
 	<!-- categories section end -->
-
-
 	<!--====== Javascripts & Jquery ======-->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

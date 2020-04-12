@@ -37,7 +37,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="site-logo">
-						<img src="img/cologo1.png" alt="">
+						<img src="img/cologo1.png" height="150" width="400" alt="">
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>
@@ -45,11 +45,9 @@
 				</div>
 				<div class="col-lg-9 col-md-9">
 					
-					<nav class="main-menu">
+					<nav class="main-menu" style=" padding-left : 490px">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="#">About us</a></li>
-							<li><a href="courses.html">Courses</a></li>
 							<li><a href="blog.html">News</a></li>
 							<li><a href="contact.html">Contact</a></li>
 						</ul>
@@ -64,7 +62,7 @@
 	<!-- Page info -->
 	<div class="page-info-section set-bg" data-setbg="img/page-bg/1.jpg">
 		<div class="container">
-			<div class="site-breadcrumb">
+			<div class="site-breadcrumb"><br>
 				<a href="#">Home</a>
 				<span>Search Results for <?php echo $_POST["name"];?></span>
 			</div>

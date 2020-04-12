@@ -268,8 +268,8 @@ ol {
 
 .site-logo {
 	display: inline-block;
-	height : 350px ; 
-	width:   300px;
+	height : 600px ; 
+	width  :  900px;
 }
 
 .main-menu ul {
@@ -282,11 +282,12 @@ ol {
 
 .main-menu ul li a {
 	display: inline-block;
-	font-size: 16px;
+	font-size: 20px;
 	color: #fff;
 	margin-left: 45px;
 	font-weight: 600;
-	padding: 20px 0 5px;
+	padding: 20px 0 5px 0px;
+	width : 
 }
 
 .main-menu ul li a:hover {
@@ -402,14 +403,15 @@ ol {
 .course-search-form {
 	background: #fff;
 	padding: 44px 38px;
+	
 }
 
 .course-search-form input[type=text],
 .course-search-form input[type=email] {
 	height: 56px;
-	width: 36.6%;
+	width: 70.6%;
 	padding: 0 30px;
-	margin-right: 18px;
+	margin-right: 50px;
 	float: left;
 	border: none;
 	font-size: 14px;
@@ -1469,7 +1471,8 @@ ol {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.main-menu ul li a {
 		margin-left: 38px;
-	}
+		
+		}
 	.header-btn {
 		min-width: 160px;
 	}
