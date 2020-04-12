@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>WebUni - Education Template</title>
@@ -66,7 +66,7 @@
 		<div class="container">
 			<div class="site-breadcrumb">
 				<a href="#">Home</a>
-				<span>Courses</span>
+				<span>Search Results for <?php echo $_POST["name"];?></span>
 			</div>
 		</div>
 	</div>
@@ -74,38 +74,20 @@
 
 
 	<!-- search section -->
-	<section class="search-section ss-other-page">
-		<div class="container">
-			<div class="search-warp">
-				<div class="section-title text-white">
-					<h2><span>Search your course</span></h2>
-				</div>
-				<div class="row">
-					<div class="col-lg-10 offset-lg-1">
-						<!-- search form -->
-						<form class="course-search-form">
-							<input type="text" placeholder="Course">
-							<input type="text" class="last-m" placeholder="Category">
-							<button class="site-btn btn-dark">Search Couse</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	
 	<!-- search section end -->
 
 
 	<!-- course section -->
 	<section class="course-section spad pb-0">
-		<div class="course-warp">
+		<!-- <div class="course-warp">
 			<ul class="course-filter controls">
 				<li class="control active" data-filter="all">All</li>
 				<li class="control" data-filter=".finance">Finance</li>
 				<li class="control" data-filter=".design">Design</li>
 				<li class="control" data-filter=".web">Web Development</li>
 				<li class="control" data-filter=".photo">Photography</li>
-			</ul>                                       
+			</ul>                                        -->
 			<div class="row course-items-area">
 				<!-- course -->
 				<div class="mix col-lg-3 col-md-4 col-sm-6 finance">
@@ -115,7 +97,39 @@
 						</div>
 						<div class="course-info">
 							<div class="course-text">
-								<h5>Art & Crafts</h5>
+								<h5>
+								<!-- Edited code -->
+								<?php 
+								//echo $_POST["name"];
+								$servername = "localhost";
+								$username = "root";
+								$password = "";
+								
+								// Create connection
+								$conn = new mysqli($servername, $username, $password);
+								
+								// Check connection
+								if ($conn->connect_error) { //if error is true then die and show the error 
+									die("Connection failed: " . $conn->connect_error);
+								} 
+								
+								
+								//echo "Connected successfully";  //if no error 
+								$sql ="use studentattendancesystem;";
+								$sql2 ="select fact_name from faculty where fact_id = " . $_POST["name"];
+								
+								$result1  = $conn->query($sql);
+								$result2  = $conn->query($sql2);
+								//$result3  = $conn->query($sql3);
+								 
+								if($row = $result2->fetch_assoc())
+								{
+									echo " ". $row["fact_name"] ." ";
+								}
+							
+								?>
+								 <!--End  -->
+								</h5>
 								<p>Lorem ipsum dolor sit amet, consectetur</p>
 								<div class="students">120 Students</div>
 							</div>

@@ -48,8 +48,8 @@
 					<nav class="main-menu">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="#">About us</a></li>
-							<li><a href="courses.html">Courses</a></li>
+							<!-- <li><a href="#">About us</a></li> -->
+							<!-- <li><a href="courses.html">Courses</a></li> -->
 							<li><a href="blog.html">News</a></li>
 							<li><a href="contact.html">Contact</a></li>
 						</ul>
@@ -62,25 +62,24 @@
 
 
 	<!-- Hero section -->
-	<section class="hero-section set-bg" data-setbg="img/bg.jpg">
+	<section class="page-info-section set-bg" data-setbg="img/bg.jpg">
 		<div class="container">
 			<div class="hero-text text-white">
-				
+				<div class="row">
+					<div class="col-lg-10 offset-lg-1">
+						<form class="intro-newslatter" action = "courses.php" method = "post">
+							
+							<input type="text" name = "name" placeholder="Search here....">
+							
+						</form>
+					</div>
+					
+					<div class="col-lg-10 offset-lg-1">
+						<br><button class="site-btn home_sign_up">Search</button>
+					</div>	
+				</div>
 			</div>
 			
-			<div class="row">
-				<div class="col-lg-10 offset-lg-1">
-					<form class="intro-newslatter">
-						
-						<input type="text" placeholder="Search here....">
-						
-					</form>
-				</div>
-				
-				<div class="col-lg-10 offset-lg-1">
-					<br><button class="site-btn home_sign_up">Search</button>
-				</div>	
-			</div>
 		</div>
 	</section>
 	<!-- Hero section end -->
