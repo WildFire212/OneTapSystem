@@ -61,11 +61,12 @@
 
 	<!-- Page info -->
 	<div class="page-info-section set-bg" data-setbg="img/page-bg/1.jpg">
-		<div class="container">
+		<div class="container text-white">
 			<div class="site-breadcrumb"><br>
-				<a href="#">Home</a>
+				<a href="index.html">Home</a>
 				<span>Search Results for <?php echo $_POST["name"];?></span>
 			</div>
+			<h2 align="center" style="padding-top : 50px;"><span>Search Results</span></h2>
 		</div>
 	</div>
 	<!-- Page info end -->
@@ -91,8 +92,8 @@
 								
 								
 								//echo "Connected successfully";  //if no error 
-								$sql ="use studentattendancesystem;";
-								$sql2 ="select fact_name from faculty where fact_name like '%". $_POST["name"] . "%'";
+								$sql ="use miniproject;";
+								$sql2 ="select fact_id,fact_name,designation,department,img from faculty where fact_name like '%". $_POST["name"] . "%'";
 								
 								$result1  = $conn->query($sql);
 								$result2  = $conn->query($sql2);
@@ -110,7 +111,10 @@
 				<!-- TO DO -->
 					<div class="mix col-lg-3 col-md-4 col-sm-6 photo">
 						<div class="course-item">
-							<div class="course-thumb set-bg" data-setbg="img/courses/8.jpg">
+						<?php
+						$factid = $row["fact_id"];
+						echo "<a href=faculty-info.php?factid=",urlencode($factid),">$factid";?>
+							<div class="course-thumb set-bg" data-setbg="<?php echo "data:image/jpeg;base64,".base64_encode($row["img"])?>">
 							
 							</div>
 							<div class="course-info">
@@ -121,14 +125,16 @@
 									
 									?>
 									</h5>
-									<p>Lorem ipsum dolor sit amet, consectetur</p>
-									<div class="students">120 Students</div>
+									
+									<div class="students"><?php echo $row["designation"]; ?></div>
 								</div>
-								<div class="course-author">
-									<div class="ca-pic set-bg" data-setbg="img/authors/8.jpg"></div>
-									<p>William Parker, <span>Developer</span></p>
+								<div  class="course-author">
+								
+									<p><?php echo $row["department"]; ?></p>
 								</div>
 							</div>
+
+						</a>
 						</div>
 					</div>
 				<?php

@@ -61,12 +61,12 @@
 
 	<!-- Page info -->
 	<div class="page-info-section set-bg" data-setbg="img/page-bg/2.jpg">
-		<div class="container text-white">
+		<div class="container text-white" >
 			<div class="site-breadcrumb"><br>
 				<a href="index.html">Home</a>
 			</div>
-					<h1 align ="center"><span>Computer Engineering</span></h1>
-			</div>
+            <h2 align="center" style="padding-top : 50px;"><span>Department of Computer Engineering</span></h2>
+		</div>
 	</div>
 	<!-- Page info end -->
 
@@ -84,16 +84,18 @@
 			<div class="row">
 				<div class="col-lg-10 offset-lg-1 course-list">
 					<div class="cl-item">
-						<h4>Course Description</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur. Phasellus sollicitudin et nunc eu efficitur. Sed ligula nulla, molestie quis ligula in, eleifend rhoncus ipsum. Donec ultrices, sem vel efficitur molestie, massa nisl posuere ipsum, ut vulputate mauris ligula a metus. Aenean vel congue diam, sed bibendum ipsum. Nunc vulputate aliquet tristique. Integer et pellentesque urna. Lorem ipsum dolor sit amet, consectetur. Phasellus sollicitudin et nunc eu efficitur. Sed ligula nulla, molestie quis ligula in, eleifend rhoncus ipsum. </p>
+						<h4>Vision</h4>
+						<p>To develop globally competent computing community with the ability to make constructive contributions to society.</p>
 					</div>
 					<div class="cl-item">
-						<h4>Certification</h4>
-						<p>Phasellus sollicitudin et nunc eu efficitur. Sed ligula nulla, molestie quis ligula in, eleifend rhoncus ipsum. Donec ultrices, sem vel efficitur molestie, massa nisl posuere ipsum, ut vulputate mauris ligula a metus. Aenean vel congue diam, sed bibendum ipsum. Nunc vulputate aliquet tristique. Integer et pellentesque urna. Lorem ipsum dolor sit amet, consectetur. Phasellus sollicitudin et nunc eu efficitur. Sed ligula nulla, molestie quis ligula in, eleifend rhoncus ipsum. Donec ultrices, sem vel efficitur molestie, massa nisl posuere ipsum.</p>
+						<h4>Mission</h4>
+						<p>To develop technocrats with capabilities to address the challenges in computer engineering by providing 
+						strong academics and wide industry exposure.</p>
 					</div>
 					<div class="cl-item">
-						<h4>The Instructor</h4>
-						<p>Sed ligula nulla, molestie quis ligula in, eleifend rhoncus ipsum. Donec ultrices, sem vel efficitur molestie, massa nisl posuere ipsum, ut vulputate mauris ligula a metus. Aenean vel congue diam, sed bibendum ipsum. Nunc vulputate aliquet tristique. Integer et pellentesque urna. Lorem ipsum dolor sit amet, consectetur. Phasellus sollicitudin et nunc eu efficitur. Sed ligula nulla, molestie quis ligula in, eleifend rhoncus ipsum. Donec ultrices, sem vel efficitur molestie, massa nisl posuere ipsum, ut vulputate mauris ligula a metus. </p>
+						<h4>HOD's Message</h4>
+						<p>Computer Engineering blends together computer science and Electrical Engineering to further advancements in digital technology, computer networking and computer systems. In turn computer engineers use their extensive knowledge of hardware and software design and computer programming to make computing platforms and applications more efficient and effective. Seamlessly integrating the latest innovations, computer engineers develop new computer hardware, design and implement software applications, and enhance the capabilities of networks and communication systems
+						</p>
 					</div>
 				</div>
 			</div>
@@ -101,6 +103,28 @@
 	</section>
 	<!-- single course section end -->
 
+	<?php 
+								//echo $_POST["name"];
+								$servername = "localhost";
+								$username = "root";
+								$password = "";
+								
+								// Create connection
+								$conn = new mysqli($servername, $username, $password);
+								
+								// Check connection
+								if ($conn->connect_error) { //if error is true then die and show the error 
+									die("Connection failed: " . $conn->connect_error);
+								} 
+								
+								
+								//echo "Connected successfully";  //if no error 
+								$sql ="use miniproject;";
+								$sql2 ="select fact_id,fact_name,designation,img from faculty where department = 'Computer Engineering'";
+								
+								$result1  = $conn->query($sql);
+								$result2  = $conn->query($sql2);
+	?>
 
 	<!-- Page -->
 	<section class="realated-courses spad">
@@ -108,22 +132,32 @@
 			<h2 class="rc-title">Meet the Faculty</h2>
 			<div class="rc-slider owl-carousel">
 				<!-- TO DO  -->
+				<?php
+				while($row = $result2->fetch_assoc())
+				{?>
+				<?php
+						$factid = $row["fact_id"];
+						echo "<a href=faculty-info.php?factid=",urlencode($factid),">";
+				?>
 				<div class="course-item">
-					<div class="course-thumb set-bg" data-setbg="img/courses/1.jpg">
+					<div class="course-thumb set-bg" data-setbg="<?php echo "data:image/jpeg;base64,".base64_encode($row["img"])?>">
 						
 					</div>
 					<div class="course-info">
 						<div class="course-text">
-							<h5>Art & Crafts</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur</p>
-							<div class="students">120 Students</div>
+							<h5><?php echo $row["fact_name"]?></h5>
+							
+							<div class="students"><?php echo $row["designation"]?></div>
 						</div>
 						<div class="course-author">
-							<div class="ca-pic set-bg" data-setbg="img/authors/1.jpg"></div>
-							<p>William Parker, <span>Developer</span></p>
+							
+							<p></span></p>
 						</div>
 					</div>
 				</div>
+				</a>
+				<?php
+				}?>
 			
 				<!-- course -->
 			</div>
