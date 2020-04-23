@@ -3,7 +3,7 @@
 <head>
 	<title>One Tap System</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Faculty Information Website">
+<meta name="description" content="Faculty Information Website">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->   
 	<link href="img/favicon.ico" rel="shortcut icon"/>
@@ -62,8 +62,7 @@
 	<div class="page-info-section set-bg" data-setbg="img/page-bg/4.jpg">
 		<div class="container">
 			<div class="site-breadcrumb"><br>
-				<a href="#">Home</a>
-				<span>Contact</span>
+				<span></span>
 			</div>
 		</div>
 	</div>
@@ -83,48 +82,71 @@
 				<div class="col-lg-8">
 					<div class="contact-form-warp">
 						<div class="section-title text-white text-left">
-							<h2>Get in Touch</h2>
-							<p>Just send us questions and queries on our E-mail and we will get in touch as soon as we hear from you.</p>
-						</div>
+							<h2>Appointment Request</h2>
+							<?php 
+							if($_GET["time"])
+							{
+								$plus =$_GET["time"] + 1;?> 
+								<p>Request an appointment with <?php echo $_GET["factname"]; ?>
+								at time <?php echo $_GET["time"] ; ?> to <?php echo $plus?> p.m.</p>
+								</div>
+							<?php
+							}
+							else{?>
+								<br><font color = 'white' size = '5'> Message sent successfully.
+								<?php
+							}
+							?>
 						<form class="contact-form">
-							<input type="text" placeholder="Your Name">
-							<input type="text" placeholder="Your E-mail">
-							<input type="text" placeholder="Subject">
-							<textarea placeholder="Message"></textarea>
-							<button class="site-btn">Sent Message</button>
+							<input type="text" name = "name" placeholder="Your Name">
+							<input type="text" name = "email" placeholder="Your E-mail">
+							<input type="text" name = "reason"placeholder="Reason to Meet">
+							<textarea name = "message" placeholder="Message"></textarea>
+							<button type = "submit" class="site-btn">Send Message</button>
 						</form>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="contact-info-area">
-						<div class="section-title text-left p-0">
-							<h2>Contact Info</h2>
-						</div>
-						<div class="phone-number">
-							<span>Direct Line</span>
-							<h2>+91 9423683433</h2>
-						</div>
-						<ul class="contact-list">
-							<li>St.Vincent Pallotti College of Engineering and Technology. Wardha Road, Nagpur</li>
-							<li>+917103275951, +917103275952, 07103-203745</li>
-							<li>info@stvincentngp.edu.in</li>
-						</ul>
-						<div class="social-links">
-							<a href="#"><i class="fa fa-pinterest"></i></a>
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-							<a href="#"><i class="fa fa-linkedin"></i></a>
-						</div>
+						<!-- PHP send request code through mail -->
+		<?php 
+			if(isset($_POST['name']) && isset($_POST['email'])&& isset($_POST['reason'])&& isset($_POST['message'])){
+			$name = $_POST['name'];
+			$email = $_POST['email'];
+			$to = "shreyaschincholkar@gmail.com";
+			$subject  = "Contacting you";
+			$body= "<html> 
+					<body>
+						<h2>Meeting you</h2>
+						<p>".$_POST['reason']."<br>".$_POST['message']."</p>
+					</body>
+					</html>";
+
+			//headers
+			$headers = "From: ".$name." <".$email.">\r\n";
+			$headers .= "Reply-To: ".$email."\r\n";
+			$headers .= "MIME-Version: 1.0\r\n";
+			$headers .= "Content-type: text/html; charset = utf-8";
+
+			//send
+			$send = mail($to, $subject, $body, $headers);
+
+			if($send)
+			{
+				echo " Mail sent";
+			}
+			else{
+				echo "<br><font color = 'white' size = '5'> Please fill all the details. Error to send the mail";
+			}
+			}
+			
+		?>
+
 					</div>
 				</div>
 			</div>
 			
 		</div>
 	</section>
-	<!-- Page end -->
 
+	
+	
 	<footer class="footer-section spad pb-0">
 		<div class="footer-top">
 			<div class="footer-warp">
@@ -151,8 +173,6 @@
 			</div>
 		</div>
 	</footer> 
-	
-		
 				
 	
 	<!-- footer section end -->

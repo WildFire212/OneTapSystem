@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>One Tap System</title>
@@ -64,7 +64,7 @@
 			<div class="site-breadcrumb"><br>
 				<a href="index.html">Home</a>
 			</div>
-            <h2 align="center" style="padding-top : 50px;"><span>Department of Computer Engineering</span></h2>
+            <h2 align="center" style="padding-top : 50px;"><span>Department of Electrical Engineering</span></h2>
 		</div>
 	</div>
 	<!-- Page info end -->
@@ -84,16 +84,19 @@
 				<div class="col-lg-10 offset-lg-1 course-list">
 					<div class="cl-item">
 						<h4>Vision</h4>
-						<p>To develop globally competent computing community with the ability to make constructive contributions to society.</p>
+						<p>To develop professionally competent and socially conscious Electrical Engineers ready to face challenges in a global environment</p>
 					</div>
 					<div class="cl-item">
 						<h4>Mission</h4>
-						<p>To develop technocrats with capabilities to address the challenges in computer engineering by providing 
-						strong academics and wide industry exposure.</p>
+						<p>• To impart knowledge through curricular & co-curricular programs to understand modern electrical technologies.
+• To develop technically strong and safety conscious electrical engineers with leadership qualities to meet industry needs.
+• To inculcate ethical values, discipline and teamwork in students, to become successful global professionals.</p>
 					</div>
 					<div class="cl-item">
 						<h4>HOD's Message</h4>
-						<p>Computer Engineering blends together computer science and Electrical Engineering to further advancements in digital technology, computer networking and computer systems. In turn computer engineers use their extensive knowledge of hardware and software design and computer programming to make computing platforms and applications more efficient and effective. Seamlessly integrating the latest innovations, computer engineers develop new computer hardware, design and implement software applications, and enhance the capabilities of networks and communication systems
+						<p>Electrical Engineering is a branch of engineering that deals with the study and application of electricity, electronics, and electromagnetism. It is one of the core branches of Engineering studies. Most of the branches like Electronics and Telecommunication Engineering, Computer Science, Instrumentation, Information Technology have emerged as a specialization from Electrical Engineering.
+Privatization of the power sector and renewable energy purchase obligation has lead to global competition and investments of thousands of crores generating high demand for Electrical Engineers in near future.
+The Department of Electrical Engineering was established in 2004. It has experienced and qualified teaching and non teaching staff. The Department is accredited by the National Board of Accreditation (NBA), an independent body set up by AICTE, New Delhi. The Department has MoUs with many industries, thus bridging the gap between Institute and Industry through internships, training programs, guest lectures, industry based projects and other interaction programs.
 						</p>
 					</div>
 				</div>

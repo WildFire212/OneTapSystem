@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>One Tap System</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Faculty Information Website">
+<meta name="description" content="Faculty Information Website">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->   
 	<link href="img/favicon.ico" rel="shortcut icon"/>
@@ -64,7 +64,7 @@
 			<div class="site-breadcrumb"><br>
 				<a href="index.html">Home</a>
 			</div>
-            <h2 align="center" style="padding-top : 50px;"><span>Department of Computer Engineering</span></h2>
+            <h2 align="center" style="padding-top : 50px;"><span>Department of Electronics & Tele-communication  </span></h2>
 		</div>
 	</div>
 	<!-- Page info end -->
@@ -84,16 +84,21 @@
 				<div class="col-lg-10 offset-lg-1 course-list">
 					<div class="cl-item">
 						<h4>Vision</h4>
-						<p>To develop globally competent computing community with the ability to make constructive contributions to society.</p>
+						<p>To develop disciplined & ethically strong Electronics & Telecommunication engineers having multidisciplinary knowledge with entrepreneurship & leadership skills to serve the society.</p>
 					</div>
 					<div class="cl-item">
 						<h4>Mission</h4>
-						<p>To develop technocrats with capabilities to address the challenges in computer engineering by providing 
-						strong academics and wide industry exposure.</p>
+						<p>• To hone young minds with knowledge in the field of Electronics and Telecommunication Engineering & related areas with a focus,
+• To develop professional competencies through proactive industry collaborations.
+• To encourage students for higher studies & research activities.
+• To inculcate a spirit of service & a concern for the environment.</p>
 					</div>
 					<div class="cl-item">
 						<h4>HOD's Message</h4>
-						<p>Computer Engineering blends together computer science and Electrical Engineering to further advancements in digital technology, computer networking and computer systems. In turn computer engineers use their extensive knowledge of hardware and software design and computer programming to make computing platforms and applications more efficient and effective. Seamlessly integrating the latest innovations, computer engineers develop new computer hardware, design and implement software applications, and enhance the capabilities of networks and communication systems
+						<p>Electronics and Tele-communication Engineering, the combination of two major branches of engineering, is one of the largest and fastest growing sectors in the industry. This branch, distinguishes itself from other technical trades, constantly re-defining its sphere of influence.
+It does help us to see, hear and communicate over vast distances, supervise production and manufacturing processes, overseeing installation and maintenance of computers, peripherals and components. We work with equipments that use extremely small amounts of power. The role of the Electronics Engineer is pivotal, in realms ranging from the toy industry, to consumer electronics, from household articles to space or satellite communication.
+
+
 						</p>
 					</div>
 				</div>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>One Tap System</title>
@@ -64,7 +64,7 @@
 			<div class="site-breadcrumb"><br>
 				<a href="index.html">Home</a>
 			</div>
-            <h2 align="center" style="padding-top : 50px;"><span>Department of Computer Engineering</span></h2>
+            <h2 align="center" style="padding-top : 50px;"><span>Department of Civil Engineering </span></h2>
 		</div>
 	</div>
 	<!-- Page info end -->
@@ -84,16 +84,19 @@
 				<div class="col-lg-10 offset-lg-1 course-list">
 					<div class="cl-item">
 						<h4>Vision</h4>
-						<p>To develop globally competent computing community with the ability to make constructive contributions to society.</p>
+						<p>To develop disciplined Civil Engineers & Administrators meeting changing technological needs and providing solutions through professional engineering practice with relevant social concerns.</p>
 					</div>
 					<div class="cl-item">
 						<h4>Mission</h4>
-						<p>To develop technocrats with capabilities to address the challenges in computer engineering by providing 
-						strong academics and wide industry exposure.</p>
+						<p>To impart knowledge for holistic career as a Civil Engineer Professional.
+To encourage entrepreneurship through research and consultancy related to Civil Engineering projects.
+To inculcate persistent learning of constantly upgrading tools & technology. 	</p>
 					</div>
 					<div class="cl-item">
-						<h4>HOD's Message</h4>
-						<p>Computer Engineering blends together computer science and Electrical Engineering to further advancements in digital technology, computer networking and computer systems. In turn computer engineers use their extensive knowledge of hardware and software design and computer programming to make computing platforms and applications more efficient and effective. Seamlessly integrating the latest innovations, computer engineers develop new computer hardware, design and implement software applications, and enhance the capabilities of networks and communication systems
+						<h4>In-charge Message</h4>
+						<p>Civil Engineering is one of the oldest disciplines that got consistently evolved right from the beginning of mankind. Civil Engineers play a vital role in National Development through innovation and planning various projects, analyzing, designing and maintaining infrastructure, essential for various other disciplines through eco-friendly approach.Geo-technical Engineering, Structural Engineering, Water Resources Engineering, Irrigation Engineering, Environmental Engineering, Building Design and Construction Technology, Construction Management and Computer Applications are various spheres of Civil Engineering.
+
+
 						</p>
 					</div>
 				</div>

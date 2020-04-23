@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>One Tap System</title>
@@ -64,7 +64,7 @@
 			<div class="site-breadcrumb"><br>
 				<a href="index.html">Home</a>
 			</div>
-            <h2 align="center" style="padding-top : 50px;"><span>Department of Computer Engineering</span></h2>
+            <h2 align="center" style="padding-top : 50px;"><span>Department of Information Technology</span></h2>
 		</div>
 	</div>
 	<!-- Page info end -->
@@ -84,16 +84,16 @@
 				<div class="col-lg-10 offset-lg-1 course-list">
 					<div class="cl-item">
 						<h4>Vision</h4>
-						<p>To develop globally competent computing community with the ability to make constructive contributions to society.</p>
+						<p>To be a center of excellence in the domain of Information Technology to nurture future professionals..</p>
 					</div>
 					<div class="cl-item">
 						<h4>Mission</h4>
-						<p>To develop technocrats with capabilities to address the challenges in computer engineering by providing 
-						strong academics and wide industry exposure.</p>
+						<p>• To impart computing knowledge in the field of information technology and digital tools.
+• To provide an effective learning environment for developing future leaders with professional ethos and attitude for lifelong learning.</p>
 					</div>
 					<div class="cl-item">
 						<h4>HOD's Message</h4>
-						<p>Computer Engineering blends together computer science and Electrical Engineering to further advancements in digital technology, computer networking and computer systems. In turn computer engineers use their extensive knowledge of hardware and software design and computer programming to make computing platforms and applications more efficient and effective. Seamlessly integrating the latest innovations, computer engineers develop new computer hardware, design and implement software applications, and enhance the capabilities of networks and communication systems
+						<p>The Department of Information Technology is one of the pioneering department of the institution established in the year 2014. The Information Technology branch was started in 2008 with an intake of 60 students. It is endowed with an experienced team of faculty members having excellent academic records and proficiency. Excellent infrastructure, state-of-the-art computer labs with the latest advances in technology and comprehensive study material makes the department a class apart. The department regularly takes various initiatives; like Personality Development, Soft Skill sessions and employment oriented technical and management sessions for providing our students a clear and decisive edge in employability. Final year batches of 2011, 2014, 2015, 2016, 2017 and 2018 made us proud with 100 % result.
 						</p>
 					</div>
 				</div>

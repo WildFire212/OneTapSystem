@@ -3,7 +3,7 @@
 <head>
 	<title>One Tap System</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Faculty Information Website">
+<meta name="description" content="Faculty Information Website">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->   
 	<link href="img/favicon.ico" rel="shortcut icon"/>
@@ -36,7 +36,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="site-logo">
-						<img src="img/cologo1.png"  height="150" width="400"  alt="">
+						<img src="img/cologo1.png" height="150" width="400" alt="">
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>
@@ -44,7 +44,7 @@
 				</div>
 				<div class="col-lg-9 col-md-9">
 					
-					<nav class="main-menu"style=" padding-left : 490px">
+					<nav class="main-menu" style=" padding-left : 490px">
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="blog.html">News</a></li>
@@ -59,48 +59,21 @@
 
 
 	<!-- Page info -->
-	<div class="page-info-section set-bg" data-setbg="img/page-bg/2.jpg">
-		<div class="container text-white" >
+	<div class="page-info-section set-bg" data-setbg="img/page-bg/1.jpg">
+		<div class="container text-white">
 			<div class="site-breadcrumb"><br>
 				<a href="index.html">Home</a>
+				<span>Search Results for <?php echo $_POST["name"];?></span>
 			</div>
-            <h2 align="center" style="padding-top : 50px;"><span>Department of Computer Engineering</span></h2>
+			<h2 align="center" style="padding-top : 50px;"><span>Search Results</span></h2>
 		</div>
 	</div>
 	<!-- Page info end -->
 
 
 	<!-- search section -->
-				
+	
 	<!-- search section end -->
-
-
-	<!-- single course section -->
-	<section class="single-course spad pb-0" style="padding-top : 0px;">
-		<div class="container">
-			
-			<img src="img/courses/single.jpg" alt="" class="course-preview">
-			<div class="row">
-				<div class="col-lg-10 offset-lg-1 course-list">
-					<div class="cl-item">
-						<h4>Vision</h4>
-						<p>To develop globally competent computing community with the ability to make constructive contributions to society.</p>
-					</div>
-					<div class="cl-item">
-						<h4>Mission</h4>
-						<p>To develop technocrats with capabilities to address the challenges in computer engineering by providing 
-						strong academics and wide industry exposure.</p>
-					</div>
-					<div class="cl-item">
-						<h4>HOD's Message</h4>
-						<p>Computer Engineering blends together computer science and Electrical Engineering to further advancements in digital technology, computer networking and computer systems. In turn computer engineers use their extensive knowledge of hardware and software design and computer programming to make computing platforms and applications more efficient and effective. Seamlessly integrating the latest innovations, computer engineers develop new computer hardware, design and implement software applications, and enhance the capabilities of networks and communication systems
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- single course section end -->
 
 	<?php 
 								//echo $_POST["name"];
@@ -119,50 +92,70 @@
 								
 								//echo "Connected successfully";  //if no error 
 								$sql ="use id13385926_miniproject;";
-								$sql2 ="select fact_id,fact_name,designation,img from faculty where department = 'Computer Engineering'";
+								$sql2 ="select fact_id,fact_name,designation,department,img from faculty where fact_name like '%". $_POST["name"] . "%'";
 								
 								$result1  = $conn->query($sql);
 								$result2  = $conn->query($sql2);
 	?>
 
-	<!-- Page -->
-	<section class="realated-courses spad">
-		<div class="course-warp">
-			<h2 class="rc-title">Meet the Faculty</h2>
-			<div class="rc-slider owl-carousel">
-				<!-- TO DO  -->
+	<!-- Results section -->
+	<section class="course-section spad pb-0">
+			<div class="row course-items-area">
+		                          
 				<?php
+				
 				while($row = $result2->fetch_assoc())
-				{?>
-				<?php
-						$factid = $row["fact_id"];
-						echo "<a href=faculty-info.php?factid=",urlencode($factid),">";
+				{
 				?>
-				<div class="course-item">
-					<div class="course-thumb set-bg" data-setbg="<?php echo "data:image/jpeg;base64,".base64_encode($row["img"])?>">
-						
-					</div>
-					<div class="course-info">
-						<div class="course-text">
-							<h5><?php echo $row["fact_name"]?></h5>
+				<!-- TO DO -->
+					<div class="mix col-lg-3 col-md-4 col-sm-6 photo">
+						<div class="course-item">
+						<?php
+						$factid = $row["fact_id"];
+						echo "<a href=faculty-info.php?factid=",urlencode($factid),">$factid";?>
+							<div class="course-thumb set-bg" data-setbg="<?php echo "data:image/jpeg;base64,".base64_encode($row["img"])?>">
 							
-							<div class="students"><?php echo $row["designation"]?></div>
-						</div>
-						<div class="course-author">
-							
-							<p></span></p>
+							</div>
+							<div class="course-info">
+								<div class="course-text">
+									<h5>
+									<?php 
+									echo "".$row["fact_name"]." ";
+									
+									?>
+									</h5>
+									
+									<div class="students"><?php echo $row["designation"]; ?></div>
+								</div>
+								<div  class="course-author">
+								
+									<p><?php echo $row["department"]; ?></p>
+								</div>
+							</div>
+
+						</a>
 						</div>
 					</div>
-				</div>
-				</a>
 				<?php
-				}?>
+				}	
+				?>
+				<!-- course -->
+				
+				<!-- course -->
+				
+				<!-- course -->
 			
 				<!-- course -->
+				
+				<!-- course -->
+				
+				<!-- course -->
+			
 			</div>
+			
 		</div>
 	</section>
-	<!-- Page end -->
+	<!-- course section end -->
 
 
 	<!-- banner section -->

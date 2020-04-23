@@ -1,11 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>One Tap System</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Faculty Information Website">
+<meta name="description" content="Faculty Information Website">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Favicon -->   
 	<link href="img/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
@@ -64,7 +63,7 @@
 			<div class="site-breadcrumb"><br>
 				<a href="index.html">Home</a>
 			</div>
-            <h2 align="center" style="padding-top : 50px;"><span>Department of Computer Engineering</span></h2>
+            <h2 align="center" style="padding-top : 50px;"><span>Department of Mechanical Engineering</span></h2>
 		</div>
 	</div>
 	<!-- Page info end -->
@@ -84,16 +83,16 @@
 				<div class="col-lg-10 offset-lg-1 course-list">
 					<div class="cl-item">
 						<h4>Vision</h4>
-						<p>To develop globally competent computing community with the ability to make constructive contributions to society.</p>
+						<p>To develop competent Mechanical Engineers through an industry oriented program to serve the society</p>
 					</div>
 					<div class="cl-item">
 						<h4>Mission</h4>
-						<p>To develop technocrats with capabilities to address the challenges in computer engineering by providing 
-						strong academics and wide industry exposure.</p>
+						<p>• To impart quality technical education to meet intellectual, ethical and career challenges.
+• To inculcate self- learning ability and develop communication & teamwork skills in students to excel in the profession.</p>
 					</div>
 					<div class="cl-item">
 						<h4>HOD's Message</h4>
-						<p>Computer Engineering blends together computer science and Electrical Engineering to further advancements in digital technology, computer networking and computer systems. In turn computer engineers use their extensive knowledge of hardware and software design and computer programming to make computing platforms and applications more efficient and effective. Seamlessly integrating the latest innovations, computer engineers develop new computer hardware, design and implement software applications, and enhance the capabilities of networks and communication systems
+						<p>The evergreen branch, from the day the stone age man chiseled his first tool, the fold of mechanical engineering has come a long way. Today, apart from the core areas like the automobile industry, mining, aerospace engineering and material sciences, a mechanical engineer finds his utility in areas such as the IT industry and banking sectors. Mechanical engineering is based on the various principles of mechanics, kinematics, thermodynamics, fluid mechanics and energy. Mechanical engineers use the core principles and knowledge in the field to design and analyze manufacturing plants, industrial equipment and machinery, heating and cooling systems, motor vehicles, aircraft, robots and more. Thus, the scope for a mechanical engineer in any part of the world is unlimited.
 						</p>
 					</div>
 				</div>
